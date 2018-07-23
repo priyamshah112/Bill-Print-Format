@@ -61,6 +61,7 @@ textarea { border: 0; overflow: hidden; resize: none;font-weight: bold;}
 			<table style="width: 100%" id="items">
 				<tr>
 					<th class="txtcolor">Product Name</th>
+					<th class="txtcolor">HSN Code</th>
 					<th class="txtcolor">Qty</th>
 					<th class="txtcolor">Batch No.</th>
 					<th class="txtcolor">Company</th>
@@ -75,10 +76,10 @@ textarea { border: 0; overflow: hidden; resize: none;font-weight: bold;}
 			  <tr class="item-row">
 			  </tr>
 			  <tr id="hiderow">
-			    <td colspan="11"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
+			    <td colspan="12"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
 			  </tr>
 			  <tr>
-			  	<td colspan="6">Terms &amp; Conditions <br>
+			  	<td colspan="7">Terms &amp; Conditions <br>
 			  	<p style="font-family:verdana;font-size: 10px;float: left;"><b>GST TIN NO:- 27AWAPS4742B1ZP&nbsp;&nbsp;D.L NO:- 20CNZ6/93/481/20NZ6/93/450.</b></p><br>
 				  <p style="font-size: 10px;float: left;">Declaration:-I/We hereby certify that my/our Registration certificate under the Maharashtra value added Tax Act 2002 is in force on the date on which the sale of the goods specified in this tax invoice is made by me/us and that the transaction of sale covered by this Tax Invoice has been effected by me/us and it shall be accounted for in the turnover of sales filling of return.
 				</p>
@@ -131,7 +132,7 @@ document.getElementById('PurchaseDate').innerHTML=print_today();
 		$(document).ready(function() {
 
   $("#addrow").click(function(){
-    $(".item-row:last").after('<tr class="item-row"><td class="item-name"><div class="delete-wpr"><textarea cols="30" class="che" name="Product Name"></textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td><td><textarea class="qty che" cols="5" name="Quantity"></textarea></td><td><textarea cols="10" class="che" name="Batch No."></textarea></td><td><textarea cols="20" class="che" name="Company"></textarea></td><td><input type="month" name="bdaymonth"></td><td><textarea cols="10" class="rate che" name="Rate"></textarea></td><td><textarea cols="10" class="sgst che" name="SGST %"></textarea></td><td><textarea cols="10" class="sgstval che" name="SGST val"></textarea></td><td><textarea cols="10" class="cgst che" name="CGST %"readonly></textarea></td><td><textarea cols="10" class="cgstval che" name="CGST %" readonly></textarea></td><td><textarea cols="10" class="amt che" name="Amount"></textarea></td></tr>');
+    $(".item-row:last").after('<tr class="item-row"><td class="item-name"><div class="delete-wpr"><textarea cols="20" class="che" name="Product Name"></textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td><td><textarea class="hsn che" cols="10" name="HSN Code"></textarea><td><textarea class="qty che" cols="5" name="Quantity"></textarea></td><td><textarea cols="10" class="che" name="Batch No."></textarea></td><td><textarea cols="20" class="che" name="Company"></textarea></td><td><input type="month" name="bdaymonth"></td><td><textarea cols="10" class="rate che" name="Rate"></textarea></td><td><textarea cols="10" class="sgst che" name="SGST %"></textarea></td><td><textarea cols="10" class="sgstval che" name="SGST val"></textarea></td><td><textarea cols="10" class="cgst che" name="CGST %"readonly></textarea></td><td><textarea cols="10" class="cgstval che" name="CGST %" readonly></textarea></td><td><textarea cols="10" class="amt che" name="Amount"></textarea></td></tr>');
     if ($(".delete").length > 0) $(".delete").show();
     bind();
   });
