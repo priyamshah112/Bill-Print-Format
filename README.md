@@ -1,14 +1,18 @@
 # Bill-Print-Format
-It is a basic format to print bills from anywhere over the office 
+It is invoice format to print bills.It consists of SGST & CGST calculations.
 
-File Format
-index.php 
-defines all the table and designs
+# Speciality
+Desktop Application compatible with WIndows 7,Windows 10,Linux,Mac.
+Online Billing & Printing facility available at site.
+For Windows XP can use Window.html offline in browser to generate and print bill.
 
-js
-Has add row, delete row function also total cost calc and balance function are available 
-It has functions for change or delete logo 
+# File Structure
+billprint-win32-x64 (Desktop Software Folder) -> billprint.exe
 
-One basic format is live 
+# Source File
+Run Requirements.txt
+Run npm start in Source code folder
+
+Online Billing and Printing
 https://bill-print.herokuapp.com/
 
