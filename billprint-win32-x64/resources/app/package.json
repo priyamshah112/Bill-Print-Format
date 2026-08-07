@@ -9,7 +9,7 @@
   "author": "Priyam Shah",
   "license": "MIT",
   "dependencies": {
-    "electron": "^39.8.5",
+    "electron": "^39.8.10",
     "electron-packager": "^17.1.2"
   }
 }
